@@ -1,0 +1,8 @@
+{
+  "name": "chuffin-ale-backend",
+  "version": "1.0.0",
+  "description": "Chuffin' Ale payment backend",
+  "dependencies": {
+    "stripe": "^14.0.0"
+  }
+}
