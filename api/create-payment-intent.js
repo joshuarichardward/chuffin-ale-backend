@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
         }
 
         const paymentIntent = await stripe.paymentIntents.create({
-            amount: Math.round(amount * 100), // Convert £ to pence
+amount: Math.round(amount), // Already in pence from app
             currency,
             automatic_payment_methods: { enabled: true },
             metadata: {
